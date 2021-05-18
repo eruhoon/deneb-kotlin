@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/edittext_id"
+        android:text="@string/login_fragment_id"
+        app:layout_constraintBottom_toTopOf="@id/textview_pw"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/textview_id" />
+
+
+    <TextView
+        android:id="@+id/textview_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/edittext_pw"
+        android:text="@string/login_fragment_pw"
+        app:layout_constraintBottom_toBottomOf="@id/button_submit"
+        app:layout_constraintTop_toBottomOf="@id/textview_id" />
+
+    <EditText
+        android:id="@+id/edittext_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/textview_pw" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_fragment_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_pw" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

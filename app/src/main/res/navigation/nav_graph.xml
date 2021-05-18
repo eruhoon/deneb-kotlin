@@ -3,11 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="xyz.mycast.deneb.view.LoginFragment"
+        android:label="@string/login_fragment_label"
+        tools:layout="@layout/fragment_login" />
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="xyz.mycast.deneb.FirstFragment"
+        android:name="xyz.mycast.deneb.view.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -17,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="xyz.mycast.deneb.SecondFragment"
+        android:name="xyz.mycast.deneb.view.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
